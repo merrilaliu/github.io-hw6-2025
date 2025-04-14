@@ -50,6 +50,7 @@ window.addEventListener("load", function () {
 	document.querySelector("#slider").addEventListener("click", function () {
 		console.log("Change Volume");
 		video.volume = this.value / 100;
+		document.querySelector("#volume").innerText = `${this.value}%`;
 	});
 
 	document.querySelector("#vintage").addEventListener("click", function () {
