@@ -29,10 +29,10 @@ window.addEventListener("load", function () {
 
 	document.querySelector("#skip").addEventListener("click", function () {
 		console.log("Skip Ahead");
-		if (video.currentTime + 15 >= video.duration) {
+		if (video.currentTime + 10 >= video.duration) {
 			video.currentTime = 0;
 		} else {
-			video.currentTime += 15;
+			video.currentTime += 10;
 		}
 	
 		console.log("New location: " + video.currentTime);
